@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    background: #111;
+}
+
+
+nav {
+    padding: 30px;
+    background-color:blueviolet;
+    position: fixed;
+    width: 100%;
+}
+
+nav .ul {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 0 0 10px #ff6600,
+    0 0 20px #ff6600,
+    0 0 40px #ff6600,
+    0 0 80px #ff6600,
+    0 0 160px #ff6600;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    line-height: 80vh;
+}
+
+#projects {
+    background: blue;
+}
+
+#projects h1 {
+    font-size: 70px;
+    text-shadow: 0 0 10px #ff6600,
+    0 0 20px #ff6600,
+    0 0 40px #ff6600,
+    0 0 80px #ff6600,
+    0 0 160px #ff6600;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    padding: 300px;
+    /* padding: 800px;
+    margin-left: -150px; */
+}
+
+#contacts {
+    background: green;
+}
+
+#contacts h1 {
+    font-size: 70px;
+    text-shadow: 0 0 10px #ff6600,
+    0 0 20px #ff6600,
+    0 0 40px #ff6600,
+    0 0 80px #ff6600,
+    0 0 160px #ff6600;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    padding: 300px;
+    /* padding: 800px;
+    margin-left: -150px; */
+}
+
+nav .ul .scroll-menu {
+    padding: 7px;
+}
+
+nav .ul .scroll-menu a{
+    text-decoration: none;
+    color:aqua;
+    font-size: 20px;
+}
+
+nav .mobile-menu .scroll-menu a{
+    text-decoration: none;
+    color:aqua;
+    font-size: 20px;
+}
+
+/* nav .ul .li .scroll-menu {
+    
+} */
+
+nav .ul .li button {
+    padding: 7px 30px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .ul .li button.Red {
+    border: 1px solid red;
+    background: red;
+}
+
+nav .ul .li button.Blue {
+    border: 1px solid blue;
+    background: blue;
+}
+
+nav .ul .li button.Green {
+    border: 1px solid Green;
+    background: green;
+}
+
+nav .ul .li button.Yellow {
+    border: 1px solid yellow;
+    background: yellow;
+}
+
+nav .ul .li button.Black {
+    border: 1px solid black;
+    background: black;
+}
+
+nav .ul .li button.Gray {
+    border: 1px solid gray;
+    background: gray;
+}
+
+nav .ul .li button.Pink {
+    border: 1px solid pink;
+    background: pink;
+}
+
+nav .ul .li button.Brown {
+    border: 1px solid brown;
+    background: brown;
+}
+
+
+nav .mobile-menu {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* display: none; */
+    transition: 0.3s;
+    pointer-events: none;
+    transform: translateX(100%);
+    background: blueviolet;
+}
+
+nav .mobile-menu .li button {
+    padding: 7px 30px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+nav .mobile-menu .li button.Red {
+    background: red;
+    border: red;
+}
+
+nav .mobile-menu .li button.Blue {
+    border: 1px solid blue;
+    background: blue;
+}
+
+nav .mobile-menu .li button.Green {
+    border: 1px solid Green;
+    background: green;
+}
+
+nav .mobile-menu .li button.Yellow {
+    border: 1px solid yellow;
+    background: yellow;
+}
+
+nav .mobile-menu .li button.Black {
+    border: 1px solid black;
+    background: black;
+}
+
+nav .mobile-menu .li button.Gray {
+    border: 1px solid gray;
+    background: gray;
+}
+
+nav .mobile-menu .li button.Pink {
+    border: 1px solid pink;
+    background: pink;
+}
+
+nav .mobile-menu .li button.Brown {
+    border: 1px solid brown;
+    background: brown;
+}
+
+nav .mobile-menu.active {
+    /* display: flex; */
+    pointer-events: all;
+    transform: translateX(0%);
+}
+
+nav .header-burger .burger {
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -10px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    z-index: 99;
+} 
+
+nav .header-burger .close {
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -10px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    z-index: 99;
+}
+
+nav .header-burger.active  .burger{
+    opacity: 0;
+    display: none;
+}
+
+nav .header-burger.active .close {
+    display: block;
+    justify-content: flex-end;
+    margin-left: 882px;
+} 
+
+/* nav .close {
+    display: none;
+}
+
+nav .close.active {
+    display: flex;
+} */
+

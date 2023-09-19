@@ -1,0 +1,9 @@
+@media (max-width: 980px) {
+    nav .header-burger .burger {
+        display: flex;
+    }    
+
+    nav .ul {
+        display: none;
+    }
+}
