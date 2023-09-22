@@ -250,9 +250,17 @@ nav .header-burger.active  .burger{
 }
 
 nav .header-burger.active .close {
-    display: block;
+    display: flex;
     justify-content: flex-end;
-    margin-left: 882px;
+    align-items: flex-end;
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+    color: #fff;    
 } 
 
 /* nav .close {
